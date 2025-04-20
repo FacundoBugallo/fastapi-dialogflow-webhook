@@ -1,0 +1,56 @@
+Proyecto: Chatbot de Atención al Cliente con Dialogflow CX + Backend (Python)
+Objetivo del proyecto
+Crear un chatbot que pueda:
+
+Responder preguntas frecuentes (por ejemplo: horarios, contacto, productos).
+
+Consultar datos dinámicos desde una API simulada (por ejemplo: estado de pedido).
+
+Mostrar un flujo conversacional coherente, escalable y fácil de mantener.
+
+Fases del desarrollo
+1. Diseño del agente en Dialogflow CX
+Crear un nuevo agente.
+
+Definir intents como:
+
+"Consultar horarios"
+
+"Consultar estado de pedido"
+
+"Hablar con un humano"
+
+Crear entidades (por ejemplo: tipos de pedido, ID de cliente).
+
+Armar los flujos (pages + routes + webhooks).
+
+2. Backend en Python (Flask o FastAPI)
+Crear un endpoint /webhook que reciba la request de Dialogflow.
+
+Implementar lógica de respuesta basada en el intent recibido.
+
+Simular base de datos o respuestas con un diccionario o JSON (por ejemplo: estado del pedido).
+
+3. Integración con Dialogflow Webhook
+En Dialogflow CX, configurar el webhook con la URL del backend (si usás ngrok o localtunnel para testeo).
+
+Enviar datos desde el intent al webhook y devolver respuestas dinámicas.
+
+4. Testing del flujo completo
+Probar el bot desde Dialogflow CX.
+
+Confirmar que responde correctamente a diferentes intents.
+
+Verificar que el webhook funcione bien, con manejo de errores si algo falla.
+
+5. Documentación + GitHub
+Subir el código a GitHub con README explicando:
+
+Qué hace el bot
+
+Cómo levantar el backend
+
+Capturas de pantalla del agente y los flujos
+
+Instrucciones para testear
+

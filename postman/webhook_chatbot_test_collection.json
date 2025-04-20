@@ -1,0 +1,118 @@
+{
+  "info": {
+    "name": "Webhook Chatbot - Test Intents",
+    "_postman_id": "cb3a0c00-fake-id-for-demo",
+    "description": "Colecci\u00f3n para probar distintos intents del webhook del chatbot.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Consultar Horario",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"queryResult\": {\n    \"intent\": { \"displayName\": \"ConsultarHorario\" },\n    \"parameters\": { \"servicio\": \"consultor\u00eda\" }\n  }\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/webhook",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "webhook"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Consultar Precio",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"queryResult\": {\n    \"intent\": { \"displayName\": \"ConsultarPrecio\" },\n    \"parameters\": { \"servicio\": \"certificaci\u00f3n\" }\n  }\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/webhook",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "webhook"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Consultar Ubicacion",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"queryResult\": {\n    \"intent\": { \"displayName\": \"ConsultarUbicacion\" },\n    \"parameters\": { \"servicio\": \"oficina central\" }\n  }\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/webhook",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "webhook"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Consultar Requisitos",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"queryResult\": {\n    \"intent\": { \"displayName\": \"ConsultarRequisitos\" },\n    \"parameters\": { \"servicio\": \"carrera de psicolog\u00eda\" }\n  }\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/webhook",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "webhook"
+          ]
+        }
+      }
+    }
+  ]
+}
